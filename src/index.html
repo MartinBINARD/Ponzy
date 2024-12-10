@@ -26,7 +26,51 @@
             Nous doublons votre investissement chaque année, et ce, sans aucun
             risque.
           </h3>
-          <form action=""></form>
+          <form action="#" class="grid grid-cols-2 gap-6">
+            <div class="flex flex-col gap-y-1">
+              <label class="text-sm font-bold" for="firstname">Prénom</label>
+              <input class="rounded" id="firstname" type="text" />
+            </div>
+            <div class="flex flex-col gap-y-1">
+              <label class="text-sm font-bold" for="name">Nom</label>
+              <input class="rounded" id="name" type="text" />
+            </div>
+            <div class="flex flex-col gap-y-1">
+              <label class="text-sm font-bold" for="email">Email</label>
+              <input class="rounded" id="email" type="email" />
+            </div>
+            <div class="flex flex-col gap-y-1">
+              <label class="text-sm font-bold" for="tel">Téléphone</label>
+              <input class="rounded" id="tel" type="tel" />
+            </div>
+            <div class="col-span-2 flex flex-col gap-y-1">
+              <label class="mb-4 text-sm font-bold">Estimation de votre capital</label>
+              <label for="25">
+                <input class="mr-2 text-black" type="radio" name="capital" id="25" />
+                moins de 25000€
+              </label>
+              <label for="25-50">
+                <input class="mr-2 text-black" type="radio" name="capital" id="25-50" />
+                entre 25000€ et 50000€
+              </label>
+              <label for="50">
+                <input class="mr-2 text-black" type="radio" name="capital" id="50" />
+                plus de 50000€
+              </label>
+            </div>
+            <div class="col-span-2 flex flex-col gap-y-1">
+              <label class="text-sm font-bold" for="message">Message</label>
+              <textarea cols="30" class="rounded" rows="5"></textarea>
+            </div>
+            <button
+              class="col-span-2 rounded bg-blue-500 py-2 text-center font-medium text-white shadow-xl transition-colors hover:bg-blue-600 active:bg-blue-700">
+              Confiez-nous votre argent !
+            </button>
+            <p class="col-span-2 text-xs">
+              En soumettant ce formulaire, vous acceptez toutes nos
+              <a href="#" class="font-bold"> conditions d'utilisation</a>.
+            </p>
+          </form>
         </div>
         <div class="basis-72 bg-[url(./assets/images/bitcoin.jpeg)] bg-cover"></div>
       </div>
